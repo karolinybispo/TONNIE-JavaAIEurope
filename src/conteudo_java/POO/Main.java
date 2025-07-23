@@ -7,16 +7,16 @@ public class Main {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
-            Person pessoa = new Person();
-            pessoa.name = "Livia";
-            pessoa.age = 3;
+            Person pessoa = new Person("Paraná");
+            pessoa.setName("Livia");
+            pessoa.setAge(3);
 
-            var men = new Person();
-            men.age = 10;
-            men.name = "benjamin";
+            var men = new Person("Santa Catarina");
+            men.setAge(10);
+            men.setName("Benjamin");
 
-            System.out.println("Menina: " + pessoa.name + " tem " + pessoa.age + " anos");
-            System.out.println("Menino: " + men.name + " tem " + men.age + " anos");
+            System.out.println("Menina: " + pessoa.getAge() + " tem " + pessoa.getAge() + " anos" + " é do estado: " + pessoa.getEstado());
+            System.out.println("Menino: " + men.getName() + " tem " + men.getAge() + " anos" + " é do estado: " + men.getEstado());
 
         }
 }
